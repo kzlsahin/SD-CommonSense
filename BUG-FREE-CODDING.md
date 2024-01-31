@@ -27,7 +27,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - Test exceptions
   - Test every possible state of the global dependencies
   
-- **Prevent any global dependency as far as possible:**
+- **Avoid any global dependency as far as possible:**
   
   - Explicitly specify and indicate any global-like dependency.
   - If function uses any global property, receive that at the begining of the function
