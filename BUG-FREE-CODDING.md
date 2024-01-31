@@ -45,7 +45,9 @@ Here are the principles I witnessed as quite important for writing bug free meth
 - **Use type allias for complicated nested types, such as `Action<Action<UseState>, Object[]>`:**
   
   - this will prevent ( [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) ) challanges for debugging and refactoring the codabase in future
-    
+
+- use in-functon alliases for repeated dot-notation chains.
+ 
 - **Return empty collection instead of null value**
   
 - **Briefly document the function and keep it up-to-date:**
@@ -60,8 +62,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   
   - take a look for any possible exception.
   - take a look for any possible null values.
-  - use in-functon alliases for repeated dot-notation chains.
-
+  
 ### Logging
 
 (in progress)
