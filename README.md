@@ -1,2 +1,2 @@
-# SD-CommonSense
-(in progress) the repository contains resources, code snippets, documentation, or best practices that reflect a common-sense approach to software development. 
+# SD-CommonSense (in progress)
+This repository aims to compile resources, code snippets, documentation, and best practices that embody a common-sense approach to software development. Explore guidelines for clean code, project organization, and effective problem-solving. Contribute your insights to foster a community-driven resource for developers seeking practical wisdom in their projects.
