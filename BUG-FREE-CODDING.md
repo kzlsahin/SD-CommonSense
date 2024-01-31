@@ -48,7 +48,7 @@ Here are the principles I witnessed as quite important for writing bug free meyh
     
 - **Return empty collection instead of null value**
   
-- **Keep documentation up-to-date:**
+- **Briefly document the function and keep it up-to-date:**
   
   - Briefly describe what the function is doing
   - Specify any input related validation rule
