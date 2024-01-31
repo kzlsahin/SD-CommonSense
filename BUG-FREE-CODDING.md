@@ -50,7 +50,7 @@ Here are the principles I witnessed as quite important for writing bug free meyh
   
 - **Keep documentation up-to-date:**
   
-  - Breifly describe what the function is doing
+  - Briefly describe what the function is doing
   - Specify any input related validation rule
   - Briefly indicate any global dependecny
   - List all the possible exceptions that can be thrown
