@@ -14,8 +14,8 @@ Here are the principles I witnessed as quite important for bug free function wri
 - **Outline any function before writing it:**
 
   - Outline generic workflow
-  - Determine all of possible inputs
-  - Determine possible outputs
+  - Determine range of possible inputs
+  - Determine range of possible outputs
   - Determine possible side effects
 
 - **Determine characteristics of the function:**
