@@ -43,7 +43,7 @@ Here are the principles I witnessed as quite important for bug free function wri
   - List all the possible exceptions that can be thrown
   - specify possiblity of returning `Null`
 10. Double check any function/method as if it is written on a paper.
-  - take a look for any possible exception throwing points that could be overlooked.
+  - take a look for any possible exception.
   - take a look for any possible null values.
   - use in-functon alliases for repeated dot-notation chains.
 
