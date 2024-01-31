@@ -2,7 +2,7 @@
 
 ## Principles
 ### Writing Function/Methods 
-First of all, any function or method (will be used interchangebly) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
+First of all, any function or method (will be used interchangeably) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
 - **Exceptions**: Shall the function be handled for thrown exception (and what kind of),
 - **Input validation**: Input types and specific rules for validation
 - **Return type**: Shall the function be expected to return null
