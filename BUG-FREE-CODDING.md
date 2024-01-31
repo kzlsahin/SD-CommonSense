@@ -56,7 +56,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - Specify any input related validation rule
   - Briefly indicate any global dependency
   - List all the possible exceptions that can be thrown
-  - specify possibility of `Null` return.
+  - Indicate possibility of `Null` return.
     
 - **Double check any function as if it is written on a paper:**
   
