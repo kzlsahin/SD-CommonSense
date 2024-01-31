@@ -46,7 +46,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   
   - this will prevent ( [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) ) challanges for debugging and refactoring the codabase in future
 
-- **use in-functon alliases for repeated dot-notation chains.**
+- **use local variables as alliases for repeated dot-notation chains.**
  
 - **Return empty collection instead of null value**
   
