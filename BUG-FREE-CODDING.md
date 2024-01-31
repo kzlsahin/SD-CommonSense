@@ -9,7 +9,7 @@ First of all, any function or method (will be used interchangeably) shall be wri
 - **Dependency**: Does the function depends on any variable or constant outside (a class property or global object)
 - **Side effects**: Does the function do any thing outside of its scope
 
-Here are the principles I witnessed as quite important for writing bug free meyhods:
+Here are the principles I witnessed as quite important for writing bug free methods:
 
 - **Outline any function before writing it:**
 
