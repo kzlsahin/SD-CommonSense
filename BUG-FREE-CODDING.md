@@ -31,7 +31,7 @@ Here are the principles I witnessed as quite important for writing bug free meyh
   
   - Explicitly specify and indicate any global-like dependency.
   - If function uses any global property, receive that at the begining of the function
-  - IF function set any global-like property as a product of inner process, do that at the end of the function
+  - If function set any global-like property as a product of inner process, do that at the end of the function
   - Check global dependecies in terms of concurrency
     
 - **Keep function as simple as possibe.**
