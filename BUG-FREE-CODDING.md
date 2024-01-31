@@ -12,15 +12,13 @@ First of all, any function or method (will be used interchangebly) shall be writ
 Here are the principles I witnessed as quite important for bug free function writing:
 
 - **Outline any function before writing it:**
+
+  - Outline generic workflow
   - Determine all of possible inputs
   - Determine possible outputs
   - Determine possible side effects
-- **Determine rules for the function asking questions:**
-  
-  - Returns null?
-  - Throws exceptions?
-  - Encounter possible null arguments?
-  - Any specific validations for arguments?
+
+- **Determine characteristics of the function:**
   
 - **Prevent any global dependency as far as possible:**
   
@@ -44,7 +42,7 @@ Here are the principles I witnessed as quite important for bug free function wri
   - Check function arguments for null values
   - check for empty collections IF there is any colletion type argument
     
-- **Use type allias for complicated nested types, such as `Action<Action<UseState>, Object[]>`, are used:**
+- **Use type allias for complicated nested types, such as `Action<Action<UseState>, Object[]>`:**
   
   - this will prevent ( [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) ) challanges for debugging and refactoring the codabase in future
     
@@ -58,7 +56,7 @@ Here are the principles I witnessed as quite important for bug free function wri
   - List all the possible exceptions that can be thrown
   - specify possiblity of returning `Null`
     
-- **Double check any function/method as if it is written on a paper:**
+- **Double check any function as if it is written on a paper:**
   
   - take a look for any possible exception.
   - take a look for any possible null values.
