@@ -40,7 +40,7 @@ Here are the principles I witnessed as quite important for writing bug free meyh
   
   - Use early returns to validate the initial state
   - Check function arguments for null values
-  - check for empty collections If there is any colletion type argument
+  - check for empty collections If there is any collection type argument
     
 - **Use type allias for complicated nested types, such as `Action<Action<UseState>, Object[]>`:**
   
