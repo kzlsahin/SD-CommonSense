@@ -52,9 +52,9 @@ Here are the principles I witnessed as quite important for writing bug free meyh
   
   - Briefly describe what the function is doing
   - Specify any input related validation rule
-  - Briefly indicate any global dependecny
+  - Briefly indicate any global dependency
   - List all the possible exceptions that can be thrown
-  - specify possiblity of returning `Null`
+  - specify possibility of `Null` return.
     
 - **Double check any function as if it is written on a paper:**
   
