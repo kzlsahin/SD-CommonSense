@@ -1,7 +1,7 @@
 # Bug Free Codding
 
 ## Principles
-### Writing Function/Methods 
+### Writing Functions/Methods 
 First of all, any function or method (will be used interchangeably) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
 - **Exceptions**: Shall the function be handled for thrown exception (and what kind of),
 - **Input validation**: Input types and specific rules for validation
@@ -9,7 +9,7 @@ First of all, any function or method (will be used interchangeably) shall be wri
 - **Dependency**: Does the function depends on any variable or constant outside (a class property or global object)
 - **Side effects**: Does the function do any thing outside of its scope
 
-Here are the principles I witnessed as quite important for bug free function writing:
+Here are the principles I witnessed as quite important for writing bug free meyhods:
 
 - **Outline any function before writing it:**
 
