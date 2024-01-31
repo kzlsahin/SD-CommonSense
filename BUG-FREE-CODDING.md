@@ -11,11 +11,11 @@ First of all, any function or method (will be used interchangebly) shall be writ
 
 Here are the principles I witnessed as quite important for bug free function writing:
 
-- **Outline any function/method before writing it:**
+- **Outline any function before writing it:**
   - Determine all of possible inputs
   - Determine possible outputs
   - Determine possible side effects
-- **Determine rules for the function/method asking questions:**
+- **Determine rules for the function asking questions:**
   
   - Returns null?
   - Throws exceptions?
@@ -36,7 +36,7 @@ Here are the principles I witnessed as quite important for bug free function wri
   - Test exceptions
   - Test every possible state of the global dependencies
     
-- **Keep function/methods as simple as possibe.**
+- **Keep function as simple as possibe.**
   
 - **handle inputs carefully:**
   
