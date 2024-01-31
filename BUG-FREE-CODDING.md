@@ -53,7 +53,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
 - **Return empty collection instead of null value**
   
   - by this way, checking only the length of the collection will be enough for the caller.
-  - this will precent overlooked null exceptions.
+  - this will prevent overlooked null exceptions.
 
 - **Briefly document the function and keep it up-to-date:**
   
