@@ -3,4 +3,4 @@ This repository aims to compile resources, code snippets, documentation, and bes
 
 ## Contents
 
-1. [Bug Free Codding]()
+1. [Bug Free Codding](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md)
