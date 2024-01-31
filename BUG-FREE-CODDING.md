@@ -62,6 +62,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   
   - take a look for any possible exception.
   - take a look for any possible null values.
+  - Take a look for any possible empty collection.
   
 ### Logging
 
