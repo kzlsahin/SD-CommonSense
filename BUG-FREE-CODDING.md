@@ -38,7 +38,7 @@ Here are the principles I witnessed as quite important for bug free function wri
   
 - **handle inputs carefully:**
   
-  - Use early returns to check initial state of the function is valid
+  - Use early returns to validate the initial state
   - Check function arguments for null values
   - check for empty collections IF there is any colletion type argument
     
