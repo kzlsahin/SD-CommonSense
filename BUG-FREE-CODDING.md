@@ -19,6 +19,13 @@ Here are the principles I witnessed as quite important for writing bug free meyh
   - Determine possible side effects
 
 - **Determine characteristics of the function:**
+
+- **Design tests for the function as far as needed:**
+  
+  - Use specified rules as a checklist for test coverage
+  - Test null inputs
+  - Test exceptions
+  - Test every possible state of the global dependencies
   
 - **Prevent any global dependency as far as possible:**
   
@@ -26,13 +33,6 @@ Here are the principles I witnessed as quite important for writing bug free meyh
   - If function uses any global property, receive that at the begining of the function
   - IF function set any global-like property as a product of inner process, do that at the end of the function
   - Check global dependecies in terms of concurrency
-  
-- **Design tests for the function as far as needed:**
-  
-  - Use specified rules as a checklist for test coverage
-  - Test null inputs
-  - Test exceptions
-  - Test every possible state of the global dependencies
     
 - **Keep function as simple as possibe.**
   
