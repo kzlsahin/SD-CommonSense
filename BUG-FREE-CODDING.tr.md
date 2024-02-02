@@ -1,11 +1,12 @@
 # Hata-Free Kodlama
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md)
 
 ## İlkeler
 
 ### Genel İlkeler
 
-- [Sihirli Sayı ve Dizgilerden Kaçının](#1-sihirli-literal-lardan-ka%C3%A7%C4%B1n%C4%B1n)
+- Sihirli sayılar ve dizgiler (magic number ve magic string) kullanımından kaçının [örnek](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md#1-avoid-megic-literals)
+  
   - Sihirli sayılar ve dizgiler geliştirici için anlam taşımaz
   - Eğer kodlar arasında sihirli sayılar varsa, muhtemelen `enum` kullanılmalıdır,
   - Eğer dizgiler insan tarafından okunabilir durum belirleyicisi olarak kullanılıyorsa, `enum` kullanılmalıdır.
@@ -41,7 +42,7 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (biriyle değiştirilebilir
   
 - **Mümkünse herhangi bir global bağımlılıktan kaçının:**
   
-  - Herhangi bir global benzeri bağımlılığı açıkça belirtin ve gösterin ([örnek](#side-effects-dok%C3%BCmantasyonu)).
+  - Herhangi bir global benzeri bağımlılığı açıkça belirtin ve gösterin ([örnek](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md#document-side-effects).
   - Eğer fonksiyon herhangi bir global özelliği kullanıyorsa, bunu fonksiyonun başında alın
   - Eğer fonksiyon iç sürecin bir ürünü olarak herhangi bir global benzeri özelliği ayarlıyorsa, bunu fonksiyonun sonunda yapın
   - Global bağımlılıkları eşzamanlılık açısından kontrol edin
@@ -67,7 +68,7 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (biriyle değiştirilebilir
   - Bu şekilde, çağıran için sadece koleksiyonun uzunluğunu kontrol etmek yeterli olacaktır.
   - Bu, gözden kaçırılan null istisnalarını önler.
 
-- **Fonksiyonu kısaca belgeleyin ve güncel tutun:**
+- **Fonksiyonu açıkça belgeleyin ve güncel tutun:**
   
   - Fonksiyonun ne yaptığını kısaca açıklayın
   - Herhangi bir girişle ilgili doğrulama kuralını belirtin
@@ -77,6 +78,6 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (biriyle değiştirilebilir
     
 - **Her fonksiyonu sanki bir kağıda yazılmış gibi çift kontrol edin:**
   
-  - Herhangi bir olası istisna için gözden geçirin.
-  - Herhangi bir olası null değeri için gözden geçirin.
-  - Herhangi bir ol
+  - Herhangi bir olası istisna için kontrol edin.
+  - Herhangi bir olası null değeri için kontrol edin.
+  - Herhangi bir olası boş koleksiyon için kontrol edin.
