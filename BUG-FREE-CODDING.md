@@ -77,7 +77,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 ### Document Side Effects
 
-   ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/MehodDocumentation.png)
+   ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/MehodDocumentation_1.png)
 
 
    
