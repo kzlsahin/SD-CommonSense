@@ -1,11 +1,11 @@
 # Hatasız Kodlama
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODING.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](BUG-FREE-CODING.md)
 
 ## İlkeler
 
 ### Genel İlkeler
 
-- Sihirli sayılar ve dizgiler (magic number ve magic string) kullanımından kaçın [örnek](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODING.md#1-avoid-megic-literals)
+- Sihirli sayılar ve dizgiler (magic number ve magic string) kullanımından kaçın [örnek](BUG-FREE-CODING.md#1-avoid-megic-literals)
   
   - Sihirli sayılar ve dizgiler geliştirici için anlaşılır bir bilgi sunmaz
   - Eğer kodlar arasında sihirli sayılar varsa, muhtemelen orda `enum` kullanılmış olmalıydı,
@@ -44,7 +44,7 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (bundan sonra birbiri yerin
   
 - **Mümkünse herhangi bir global bağımlılıktan kaçın:**
   
-  - Herhangi bir global benzeri bağımlılığı açıkça belirt ([örnek](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODING.md#2-document-side-effects)).
+  - Herhangi bir global benzeri bağımlılığı açıkça belirt ([örnek](BUG-FREE-CODING.md#2-document-side-effects)).
   - Eğer fonksiyon herhangi bir global özelliği kullanıyorsa, bunu fonksiyonun başında yap.
   - Eğer fonksiyon iç sürecin bir ürünü olarak herhangi bir global benzeri özelliği ayarlıyorsa, bunu fonksiyonun sonunda yap.
   - Global bağımlılıkları eşzamanlılık açısından kontrol et.
