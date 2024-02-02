@@ -87,11 +87,54 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 ## Examples
 
-### Document Side Effects
+### 1. Avoid Megic Literals
+
+
+1.1. Avoid Magic Numbers
+```C#
+// Bad
+int result = someFunction(5);
+
+// Good
+const int DefaultRetryAttempts = 5;
+int result = someFunction(DefaultRetryAttempts);
+```
+1.2. Avoid Magic Strings:
+```C#
+// Bad
+void processState(string state) {
+    if (state == "start") {
+        // ...
+    } else if (state == "finish") {
+        // ...
+    }
+}
+
+// Good
+enum ProcessState { Start, Finish };
+
+void ProcessState(ProcessState state) {
+    if (state == ProcessState.Start) {
+        // ...
+    } else if (state == ProcessState.Finish) {
+        // ...
+    }
+}
+```
+1.3. Avoid Strings as State Variables
+```C#
+// Bad
+string currentState = "processing";
+
+// Good
+enum ProcessState { Processing, Completed };
+ProcessState currentState = ProcessState.Processing;
+```
+### 2. Document Side Effects
 
    ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/MethodDocumentation_1.png)
 
 
-return [Writing Bug-free Functions/Methods](#writing-bug-freee-functionsmethods)
+return [Writing Bug-free Functions/Methods](#writing-bug-free-functionsmethods)
    
 [wiki page about bug free programming](https://en.wikibooks.org/wiki/Bug_Free_Programming)
