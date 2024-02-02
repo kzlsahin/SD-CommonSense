@@ -13,7 +13,7 @@
   - Use constants and enums to give the developer the benefit of intellisense.
  
     
-### Writing Functions/Methods 
+### Writing bug-free Functions/Methods 
 First of all, any function or method (will be used interchangeably) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
 - **Exceptions**: Shall the function be handled for thrown exception (and what kind of),
 - **Input validation**: Input types and specific rules for validation
@@ -92,5 +92,6 @@ Here are the principles I witnessed as quite important for writing bug free meth
    ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/MethodDocumentation_1.png)
 
 
+return [Writing Bug-free Functions/Methods](#writing-bug-freee-functions/methods)
    
 [wiki page about bug free programming](https://en.wikibooks.org/wiki/Bug_Free_Programming)
