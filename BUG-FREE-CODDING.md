@@ -78,4 +78,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
 ### Document Side Effects
 
    ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/Documentation_SientificProc.png)
+
+
+   
 [wiki page about bug free programming](https://en.wikibooks.org/wiki/Bug_Free_Programming)
