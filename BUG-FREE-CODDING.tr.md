@@ -44,7 +44,7 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (bundan sonra birbiri yerin
   
 - **Mümkünse herhangi bir global bağımlılıktan kaçın:**
   
-  - Herhangi bir global benzeri bağımlılığı açıkça belirt ([örnek](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md#document-side-effects)).
+  - Herhangi bir global benzeri bağımlılığı açıkça belirt ([örnek](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md#2-document-side-effects)).
   - Eğer fonksiyon herhangi bir global özelliği kullanıyorsa, bunu fonksiyonun başında yap.
   - Eğer fonksiyon iç sürecin bir ürünü olarak herhangi bir global benzeri özelliği ayarlıyorsa, bunu fonksiyonun sonunda yap.
   - Global bağımlılıkları eşzamanlılık açısından kontrol et.
