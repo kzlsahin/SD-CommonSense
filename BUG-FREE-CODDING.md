@@ -31,7 +31,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   
   - Explicitly specify and indicate any global-like dependency.
   - If function uses any global property, receive that at the begining of the function
-  - If function set any global-like property as a product of inner process, do that at the end of the function
+  - If function sets any global-like property as a product of inner process, do that at the end of the function
   - Check global dependecies in terms of concurrency
     
 - **Keep function as simple as possibe.**
@@ -72,4 +72,9 @@ Here are the principles I witnessed as quite important for writing bug free meth
 ### Logging
 
 (in progress)
+
+### Examples
+
+1. Documenting Side Effects
+   ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/Documentation_SientificProc.png)
 [wiki page about bug free programming](https://en.wikibooks.org/wiki/Bug_Free_Programming)
