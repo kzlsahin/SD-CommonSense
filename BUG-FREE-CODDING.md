@@ -2,13 +2,15 @@
 
 ## Principles
 
-### General Principles
+### General principles
 
 - Avoid magic numbers and strings
-  - enum should have been used most probably if there is magic numbers among the codes,
-  - enum should have been used if strings are used as human readable case distinguisher.
-  - use constant value if the same string is used in multiple places, as each string occupies memory.
-  - don't use strings as state variables, it is most probable to encounter misspellings and causes [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) in future refactorings.
+  - Magic numbers and strings don't mean anything to the developer
+  - `enum` should probably have been used if there is magic numbers among the codes,
+  - `enum` should have been used if strings are used as human-readable case literals
+  - Use constant value if the same string is used in multiple places, as each string occupies memory.
+  - Don't use strings as state variables, this is likely to lead to typos and [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) in future refactorings.
+  - Use constants and enums to give the developer the benefit of intellisense.
  
     
 ### Writing Functions/Methods 
