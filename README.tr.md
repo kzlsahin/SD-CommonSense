@@ -8,4 +8,4 @@ Temiz kod, proje organizasyonu ve etkili problem çözme için rehberlere göz a
 
 İçindekiler
 
-1. [Bug Free Codding](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.tr.md)
+1. [Hatasız Kodlama](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.tr.md)
