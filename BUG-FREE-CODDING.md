@@ -1,5 +1,6 @@
 # Bug Free Codding
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.tr.md)
+
+[![en](https://img.shields.io/badge/lang-tr-red.svg)](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.tr.md)
 
 ## Principles
 
