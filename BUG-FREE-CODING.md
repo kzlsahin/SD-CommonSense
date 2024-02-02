@@ -132,6 +132,8 @@ string currentState = "processing";
 enum ProcessState { Processing, Completed };
 ProcessState currentState = ProcessState.Processing;
 ```
+return [General Principles](#general-principles)
+
 ### 2. Document Side Effects
 
    ![Documentation of a scientific method in .Net](https://github.com/kzlsahin/SD-CommonSense/blob/main/Assets/MethodDocumentation_1.png)
