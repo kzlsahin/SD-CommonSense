@@ -1,6 +1,16 @@
 # Bug Free Codding
 
 ## Principles
+
+### General Principles
+
+- Avoid magic numbers and strings
+  - enum should have been used most probably if there is magic numbers among the codes,
+  - enum should have been used if strings are used as human readable case distinguisher.
+  - use constant value if the same string is used in multiple places, as each string occupies memory.
+  - don't use strings as state variables, it is most probable to encounter misspellings and causes [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) in future refactorings.
+ 
+    
 ### Writing Functions/Methods 
 First of all, any function or method (will be used interchangeably) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
 - **Exceptions**: Shall the function be handled for thrown exception (and what kind of),
