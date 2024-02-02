@@ -29,7 +29,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   
 - **Avoid any global dependency as far as possible:**
   
-  - Explicitly specify and indicate any global-like dependency ([example](#document-side-effects).
+  - Explicitly specify and indicate any global-like dependency ([example](#document-side-effects)).
   - If function uses any global property, receive that at the begining of the function
   - If function sets any global-like property as a product of inner process, do that at the end of the function
   - Check global dependecies in terms of concurrency
