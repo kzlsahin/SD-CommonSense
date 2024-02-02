@@ -1,4 +1,4 @@
-# Bug Free Codding
+# Bug Free Coding
 
 [![en](https://img.shields.io/badge/lang-tr-red.svg)](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.tr.md)
 
