@@ -11,7 +11,7 @@
   - Eğer kodlar arasında sihirli sayılar varsa, muhtemelen `enum` kullanılmalıdır,
   - Eğer dizgiler insan tarafından okunabilir durum belirleyicisi olarak kullanılıyorsa, `enum` kullanılmalıdır.
   - Aynı dizgi birden çok yerde kullanılıyorsa, her bir dizgi bellek işgal ettiği için sabit değer kullanın.
-  - Dizgileri durum değişkenleri olarak kullanmayın, bu muhtemelen yazım hatalarına yol açabilir ve gelecekteki yeniden yapılandırmalarda [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) neden olabilir.
+  - Dizgileri durum değişkenleri olarak kullanmayın, bu muhtemelen yazım hatalarına yol açabilir ve gelecekteki yeniden yapılandırmalarda büyük sıkıntı ([Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery))  yaratabilir.
   - Geliştiriciye intellisense avantajı sağlamak için sabit değerler ve enum'lar kullanın.
 
 ### Hata-Free Fonksiyonlar/Metodlar Yazma 
