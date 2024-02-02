@@ -1,4 +1,4 @@
-# Hata-Free Kodlama
+# Hatasız Kodlama
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.md)
 
 ## İlkeler
@@ -14,7 +14,8 @@
   - Dizgileri durum değişkenleri olarak kullanmayın, bu muhtemelen yazım hatalarına yol açabilir ve gelecekteki yeniden yapılandırmalarda büyük sıkıntı ([Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery))  yaratabilir.
   - Geliştiriciye intellisense avantajı sağlamak için sabit değerler ve enum'lar kullanın.
 
-### Hata-Free Fonksiyonlar/Metodlar Yazma 
+### Hatasız Fonksiyonlar/Metodlar Yazma 
+
 Her şeyden önce, herhangi bir fonksiyon veya metod (biriyle değiştirilebilir olarak kullanılacak) öyle bir şekilde yazılmalıdır ki, herhangi bir geliştirici fonksiyonun özelliklerini ilk bakışta anlamalıdır. Bu özellikler şunlardır:
 - **İstisnalar**: Fonksiyon tarafından fırlatılan istisnalar ele alınmalıdır (ve hangi türde olduğu),
 - **Giriş doğrulama**: Giriş türleri ve özel doğrulama kuralları
@@ -22,7 +23,7 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (biriyle değiştirilebilir
 - **Bağımlılık**: Fonksiyonun dışında herhangi bir değişken veya sabite bağlı olup olmadığı
 - **Yan Etkiler**: Fonksiyon kapsamının dışında herhangi bir şey yapar mı
 
-İşte benim hata-free metotlar yazmak için oldukça önemli gördüğüm prensipler:
+İşte benim Hatasız metotlar yazmak için oldukça önemli gördüğüm prensipler:
 
 - **Her fonksiyonu yazmadan önce ana hatlarıyla belirtin:**
 
