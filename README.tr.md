@@ -6,4 +6,4 @@ Bu depo, kaliteli yazılım geliştirme prensip ve örnekleri derlemeyi amaçlam
 
 İçindekiler
 
-1. [Hatasız Kodlama](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODDING.tr.md)
+1. [Hatasız Kodlama](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODING.tr.md)
