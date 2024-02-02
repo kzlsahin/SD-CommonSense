@@ -4,7 +4,7 @@
 
 ### General principles
 
-- Avoid magic numbers and strings
+- Avoid magic numbers and strings ([example](#1-avoid-megic-literals))
   - Magic numbers and strings don't mean anything to the developer
   - `enum` should probably have been used if there is magic numbers among the codes,
   - `enum` should have been used if strings are used as human-readable case literals
