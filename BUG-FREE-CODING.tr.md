@@ -6,7 +6,7 @@
 ### Genel İlkeler
 
 - Sabırlı ol ve rahat yaz
-- 
+  
   - kod yazarken bilinçli, uyanık old ve acele etme.
   - Süreç sonuçlarını değerlendir, süreçlerin başarısız olabileceğini gözardı etme.
   - etkili bir hata yönetim stratejisi belirle. Mesela, sonuç nesneleri kullan ve log tut.
