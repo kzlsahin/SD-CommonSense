@@ -6,6 +6,11 @@
 
 ### General principles
 
+- Be patiant and write with ease
+  - write the code consciously, do not rush
+  - consider procedure results
+  - use an effective strategy for exception management. For example, Use result objects and get logs
+ 
 - Avoid magic numbers and strings ([example](#1-avoid-megic-literals))
   - Magic numbers and strings don't mean anything to the developer
   - `enum` should probably have been used if there is magic numbers among the codes,
