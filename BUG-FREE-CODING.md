@@ -20,7 +20,8 @@
   - Use constant value if the same string is used in multiple places, as each string occupies memory.
   - Don't use strings as state variables, this is likely to lead to typos and [Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery) in future refactorings.
   - Use constants and enums to give the developer the benefit of intellisense.
- 
+
+ - Use fail early principle
     
 ### Writing bug-free Functions/Methods 
 First of all, any function or method (will be used interchangeably) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
