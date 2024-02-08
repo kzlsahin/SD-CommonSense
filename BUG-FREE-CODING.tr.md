@@ -22,7 +22,7 @@
   - Dizgileri durum değişkenleri olarak kullanma, bu muhtemel yazım hatalarına karşı savunmasızdır, hata durumunda fark edilmesi zordur. Ayrıca, gelecekteki yeniden yapılandırmalarda büyük sıkıntı ([Shotgun Surgery](https://refactoring.guru/smells/shotgun-surgery))  yaratabilir.
   - Sabit değerler ve enum'lar kullanmak 'intellisense' desteğini önünüze serer.
 
-- "Fail Fast" yaklaşımını benimseyin ve "Guard Clause" yapıları kullan. 
+- "Fail Fast" yaklaşımını benimse ve "Guard Clause" yapıları kullan. 
 
 ### Hatasız Fonksiyonlar/Metodlar Yazma 
 
