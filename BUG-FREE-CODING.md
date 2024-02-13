@@ -6,6 +6,8 @@
 
 ### General principles
 
+- Sharpen your axe before chopping tree.
+
 - Be patiant and write with ease
   - write the code consciously, do not rush
   - consider procedure results
