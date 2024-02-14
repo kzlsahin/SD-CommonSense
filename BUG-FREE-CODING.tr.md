@@ -5,6 +5,8 @@
 
 ### Genel İlkeler
 
+- Ağaç kesmeden önce baltanı bile
+  
 - Sabırlı ol ve rahat yaz
   
   - kod yazarken bilinçli, uyanık old ve acele etme.
