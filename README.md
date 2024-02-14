@@ -6,4 +6,4 @@ This repository aims to compile resources, code snippets, documentation, and bes
 ## Contents
 
 1. [Bug Free Coding](https://github.com/kzlsahin/SD-CommonSense/blob/main/BUG-FREE-CODING.md)
-2. [Thinking in Multiplatform](https://github.com/kzlsahin/SD-CommonSense/blob/main/THINKING_IN_MULTIPLATFORM.md)
+2. [Thinking in Cross-Platform](https://github.com/kzlsahin/SD-CommonSense/blob/main/THINKING_IN_CROSSPLATFORM.md)
