@@ -97,6 +97,8 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 ### Concurrency
 
+[History of Concurrency](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/) from the designer of concurrency in the CLR team of Microsoft.
+
 #### Essential Considerations for Thread Safety and Locking in Concurrent Programming
 - **Data Integrity:**
   > Data integrity refers to the accuracy, consistency, and reliability of data stored in a system. In concurrent programming, ensuring data integrity involves preventing corruption or inconsistencies in shared data structures when accessed by multiple threads concurrently.
