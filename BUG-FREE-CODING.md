@@ -95,7 +95,37 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 ### Object Oriented Design
 
+### Concurrency
 
+#### Essential Considerations for Thread Safety and Locking in Concurrent Programming
+- **Data Integrity:**
+  > Data integrity refers to the accuracy, consistency, and reliability of data stored in a system. In concurrent programming, ensuring data integrity involves preventing corruption or inconsistencies in shared data structures when accessed by multiple threads concurrently.
+
+- **Race Conditions:**
+  > Race conditions occur in concurrent programs when the outcome of operations depends on the non-deterministic interleaving or timing of threads. They typically occur when multiple threads access shared resources without proper synchronization, leading to unexpected behavior or incorrect results.
+
+- **Atomicity:**
+  > Atomicity refers to the property of an operation that ensures it is performed as a single, indivisible unit. In concurrent programming, atomicity prevents interleaving of operations from multiple threads, ensuring that operations are either fully completed or not executed at all.
+
+- **Memory Visibility:**
+  > Memory visibility refers to the guarantees provided by the programming language or runtime environment regarding when changes made by one thread to shared data become visible to other threads. Synchronization mechanisms like locks enforce memory visibility to ensure that changes are propagated to other threads in a timely manner.
+
+- **Deadlocks and Livelocks:**
+  > Deadlocks occur in concurrent programs when two or more threads are blocked indefinitely, waiting for resources held by each other. Livelocks occur when threads continuously change their states without making progress, often due to incorrect or ineffective locking strategies.
+
+- **Performance:**
+  > Performance in concurrent programming refers to the efficiency and scalability of multi-threaded applications. While locking mechanisms introduce overhead due to synchronization and context switching, they are necessary for ensuring correctness. Optimized locking strategies and thread-safe data structures help minimize contention and maximize performance in concurrent applications.
+
+- **Concurrency Control:**
+  > Concurrency control involves managing access to shared resources in multi-threaded applications to prevent race conditions, ensure data integrity, and maintain correctness. It includes designing effective locking strategies, using thread-safe data structures, and coordinating access to shared resources among multiple threads.
+
+#### Principles
+
+- **Prefer not to use concurrency if not neccessary, it makes debugging harder.**
+  - Rather asynchronous programming than multithread programming.
+- **Use thread-safe collections if the collection is supposed to be modfied via "add" and "remove" methods.**
+  - Reading operations are thread-safe operations. 
+  - Keep in mind reference tpyes and value types. Eventhough thread-safe collections are used, objects may have mutable fields.
 ### Logging
 
 (in progress)
