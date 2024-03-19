@@ -103,6 +103,8 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 ## Object Oriented Design
 
+(in progress)
+
 ## Concurrency
 
 [History](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/) of Concurrency from the designer of concurrency in the CLR team of Microsoft.
