@@ -97,7 +97,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 ### Concurrency
 
-[History of Concurrency](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/) from the designer of concurrency in the CLR team of Microsoft.
+[History](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/) of Concurrency from the designer of concurrency in the CLR team of Microsoft.
 
 #### Essential Considerations for Thread Safety and Locking in Concurrent Programming
 - **Data Integrity:**
