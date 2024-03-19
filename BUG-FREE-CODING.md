@@ -7,6 +7,8 @@
 - [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
 - [Object Oriented Design](#object-oriented-design)
 - [Concurrency](#concurrency)
+  - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
+  - [Principles](#principles)
 - [Logging](#logging)
 - [Examples](#examples)
 
