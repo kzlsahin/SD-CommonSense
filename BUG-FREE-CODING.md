@@ -2,9 +2,15 @@
 
 [![en](https://img.shields.io/badge/lang-tr-red.svg)](BUG-FREE-CODING.tr.md)
 
-## Principles
+## Contents
+- [General Principels](#general-principles)
+- [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
+- [Object Oriented Design](#object-oriented-design)
+- [Concurrency](#concurrency)
+- [Logging](#logging)
+- [Examples](#examples)
 
-### General principles
+## General principles
 
 - Sharpen your axe before chopping tree.
 
@@ -25,7 +31,7 @@
 
  - Internalize "fail fast" principle and use "Guard Clause" blocks
     
-### Writing bug-free Functions/Methods 
+## Writing bug-free Functions/Methods 
 First of all, any function or method (will be used interchangeably) shall be written in such a way that, any developer shall understand the characteristics of the function at first glance. These characteristics are:
 - **Exceptions**: Shall the function be handled for thrown exception (and what kind of),
 - **Input validation**: Input types and specific rules for validation
@@ -93,13 +99,13 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - take a look for any possible null values.
   - Take a look for any possible empty collection.
 
-### Object Oriented Design
+## Object Oriented Design
 
-### Concurrency
+## Concurrency
 
 [History](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/) of Concurrency from the designer of concurrency in the CLR team of Microsoft.
 
-#### Essential Considerations for Thread Safety and Locking in Concurrent Programming
+### Essential Considerations for Thread Safety and Locking in Concurrent Programming
 - **Data Integrity:**
   > Data integrity refers to the accuracy, consistency, and reliability of data stored in a system. In concurrent programming, ensuring data integrity involves preventing corruption or inconsistencies in shared data structures when accessed by multiple threads concurrently.
 
@@ -121,14 +127,23 @@ Here are the principles I witnessed as quite important for writing bug free meth
 - **Concurrency Control:**
   > Concurrency control involves managing access to shared resources in multi-threaded applications to prevent race conditions, ensure data integrity, and maintain correctness. It includes designing effective locking strategies, using thread-safe data structures, and coordinating access to shared resources among multiple threads.
 
-#### Principles
+### Principles
 
 - **Prefer not to use concurrency if not neccessary, it makes debugging harder.**
   - Rather asynchronous programming than multithread programming.
 - **Use thread-safe collections if the collection is supposed to be modfied via "add" and "remove" methods.**
   - Reading operations are thread-safe operations. 
   - Keep in mind reference tpyes and value types. Eventhough thread-safe collections are used, objects may have mutable fields.
-### Logging
+
+- **Use functional programming paradigm for the methods consumed by asynchronous processes**
+  - Methods shall never call any external data besides the ones provided as arguments. This makes managing synchronization between async calls easier.
+  - Keep methods as simple as possible.
+  - Avoid side effects inside methods.
+ 
+- **Modification of objects requires `sync lock` where reading does not**
+  - orginize modification calls together and keep them smaller as much as possible
+  
+## Logging
 
 (in progress)
 
