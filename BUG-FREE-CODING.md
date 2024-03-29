@@ -5,6 +5,8 @@
 ## Contents
 - [General Principels](#general-principles)
 - [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
+- [Exception Sources](#exception-sources)
+- [Sneaky bugs](#sneaky-bugs)
 - [Object Oriented Design](#object-oriented-design)
 - [Concurrency](#concurrency)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
@@ -100,6 +102,32 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - take a look for any possible exception.
   - take a look for any possible null values.
   - Take a look for any possible empty collection.
+
+## Exception Sources
+
+- **Division by zero**
+
+  While reviewing a code block, keep an eye on division operators. Ensure that the divisor is checked for not having zero value, or this exception is handled.
+
+- **Null arguments**
+
+  Arguments or complex variables may have null values. Ensure that any reference type values are checked for being null or this exception is handled properly.
+
+- **Out of range index**
+
+  Always review index flow in loops, ensure that;
+    - indices starts from correct value
+    - indices are incremented properly
+    - complex logic around index increment is avoided.
+ 
+## Sneaky bugs
+
+Bugs that don't throws an exception but causes undesired behavior. These bugs are hard to identify.
+
+- **Default Values**
+
+  The value type variables have default values. It is possible to use unset variables without even recognizing it, especially when working on deeply nested algorithms.
+
 
 ## Object Oriented Design
 
