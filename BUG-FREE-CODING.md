@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-tr-red.svg)](BUG-FREE-CODING.tr.md)
 
 ## Contents
-- [General Principels](#general-principles)
+- [General Principles](#general-principles)
 - [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
 - [Exception Sources](#exception-sources)
 - [Sneaky bugs](#sneaky-bugs)
