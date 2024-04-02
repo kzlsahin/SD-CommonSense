@@ -8,8 +8,8 @@
 - [Sinsi Hatalar](#sinsi-hatalar)
 - [Nesne Yönelimli Tasarım](#nesne-yönelimli-tasarım)
 - [Eşzamanlılık](##eşzamanlılık)
-  - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
-  - [Principles](#principles)
+  - [Eşzamanlı Programlamada Thread Güvenliği ve Kilitlemenin Temel Düşünceleri](#eşzamanlı-programlamada-thread-güvenliği-ve-kilitlemenin-temel-düşünceleri)
+  - [İlkeler](#ilkeler)
 - [Logging](#logging)
 
 ## Genel İlkeler
@@ -160,21 +160,21 @@ Microsoft'un CLR ekibi içerisindeki paralel programlama tasarımcısının bak�
 - **Eşzamanlılık Kontrolü:**
   > Eşzamanlılık kontrolü, çoklu iş parçacıklı uygulamalarda paylaşılan kaynaklara erişimi yöneterek yarış koşullarını önlemek, veri bütünlüğünü sağlamak ve doğruluğu korumakla ilgilidir. Bu, etkili kilit stratejileri tasarlamayı, iş parçacığı güvenli veri yapıları kullanmayı ve birden çok iş parçacığının paylaşılan kaynaklara erişimini koordine etmeyi içerir.
 
-### Principles
+### İlkeler
+- **Eğer gerekli değilse eşzamanlılıktan kaçının, hata ayıklamayı zorlaştırır.**
+  - Çok iş parçacıklı programlamadan ziyade asenkron programlamayı tercih edin.
+    
+- **Koleksiyon "ekle" ve "kaldır" yöntemleri ile değiştirilmek üzere ise, iş parçacığı güvenli koleksiyonları (thread-safe collections) kullanın.**
+  - Okuma işlemleri iş parçacığı güvenli işlemlerdir.
+  - Referans türlerini ve değer türlerini akılda tutun. İş parçacığı güvenli koleksiyonlar kullanılsa bile, nesnelerin değiştirilebilir alanlara sahip olabileceğini unutmayın.
 
-- **Prefer not to use concurrency if not neccessary, it makes debugging harder.**
-  - Rather asynchronous programming than multithread programming.
-- **Use thread-safe collections if the collection is supposed to be modfied via "add" and "remove" methods.**
-  - Reading operations are thread-safe operations. 
-  - Keep in mind reference tpyes and value types. Eventhough thread-safe collections are used, objects may have mutable fields.
+- **Asenkron işlemler tarafından tüketilen yöntemler için fonksiyonel programlama paradigmını kullanın.**
+  - Yöntemler asla argümanlar olarak sağlananlar dışında herhangi bir harici veri çağırmamalıdır. Bu, asenkron çağrılar arasındaki senkronizasyonu yönetmeyi kolaylaştırır.
+  - Yöntemleri mümkün olduğunca basit tutun.
+  - Yöntemlerin içinde yan etkilerden kaçının.
 
-- **Use functional programming paradigm for the methods consumed by asynchronous processes**
-  - Methods shall never call any external data besides the ones provided as arguments. This makes managing synchronization between async calls easier.
-  - Keep methods as simple as possible.
-  - Avoid side effects inside methods.
- 
-- **Modification of objects requires `sync lock` where reading does not**
-  - orginize modification calls together and keep them smaller as much as possible
+- **Nesnelerin değiştirilmesi, okumaya gerek yoksa sync lock gerektirir.**
+  - Değiştirme çağrılarını bir araya getirin ve mümkün olduğunca küçük tutun.
   
 ## Loglama
 
