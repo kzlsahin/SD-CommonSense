@@ -176,6 +176,6 @@ Microsoft'un CLR ekibi içerisindeki paralel programlama tasarımcısının bak�
 - **Modification of objects requires `sync lock` where reading does not**
   - orginize modification calls together and keep them smaller as much as possible
   
-## Logging
+## Loglama
 
 (in progress)
