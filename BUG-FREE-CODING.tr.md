@@ -7,7 +7,7 @@
 - [İstisna (Hata) Kaynakları](#i̇stisna-kaynakları)
 - [Sinsi Hatalar](#sinsi-hatalar)
 - [Nesne Yönelimli Tasarım](#nesne-yönelimli-tasarım)
-- [Concurrency](#concurrency)
+- [Eşzamanlılık](#eszamanlilik)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
   - [Principles](#principles)
 - [Logging](#logging)
