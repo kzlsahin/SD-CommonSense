@@ -1,9 +1,18 @@
 # Hatasız Kodlama
 [![en](https://img.shields.io/badge/lang-en-red.svg)](BUG-FREE-CODING.md)
 
-## İlkeler
+## Contents
+- [Genel İlkeler](#genel-i̇lkeler)
+- [Hatasız Fonksiyonlar/Metodlar Yazma ](#hatasız-fonksiyonlarmetodlar-yazma )
+- [İstisna (Hata) Kaynakları](#i̇stisna-kaynakları)
+- [Sneaky bugs](#sneaky-bugs)
+- [Object Oriented Design](#object-oriented-design)
+- [Concurrency](#concurrency)
+  - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
+  - [Principles](#principles)
+- [Logging](#logging)
 
-### Genel İlkeler
+## Genel İlkeler
 
 - Ağaç kesmeden önce baltanı bile
   
@@ -26,7 +35,7 @@
 
 - "Fail Fast" yaklaşımını benimse ve "Guard Clause" yapıları kullan. 
 
-### Hatasız Fonksiyonlar/Metodlar Yazma 
+## Hatasız Fonksiyonlar/Metodlar Yazma 
 
 Her şeyden önce, herhangi bir fonksiyon veya metod (bundan sonra birbiri yerine kullanılacak) öyle bir şekilde yazılmalıdır ki, herhangi bir geliştirici, fonksiyonun karakteristik özelliklerini ilk bakışta anlamalıdır. Bu özellikler şunlardır:
 
@@ -95,3 +104,78 @@ Her şeyden önce, herhangi bir fonksiyon veya metod (bundan sonra birbiri yerin
   - Gözden kaçırılmış herhangi bir olası `Exception` için kontrol et.
   - Gözden kaçırılmış, null değeri gelebilecek noktaları kontrol et.
   - Herhangi bir boş koleksiyon ihtimalini kontrol et.
+
+
+## İstisna Kaynakları
+- **Sıfıra bölme**
+
+Bir kod bloğunu gözden geçirirken, bölme operatörlerine dikkat edin. Bölenin sıfır değerine sahip olmadığından veya bu istisnanın işlendiğinden emin olun.
+
+- **Boş argümanlar**
+
+Argümanlar veya karmaşık değişkenler boş değerlere sahip olabilir. Herhangi bir referans tipi değerinin boş olup olmadığını kontrol edin veya bu istisnanın uygun şekilde işlendiğinden emin olun.
+
+- **Aralık dışı indis**
+
+Döngülerde indis akışını her zaman gözden geçirin, ve emin olun ki;
+
+  - indisler doğru değerden başlıyor
+  - indisler uygun şekilde arttırılıyor
+  - indis artışı etrafındaki karmaşık mantıktan kaçınılıyor.
+ 
+## Sinsi Hatalar
+
+İstisna fırlatmayan ancak istenmeyen davranışlara neden olan hatalar. Bu hataları tanımlamak zordur.
+
+- **Varsayılan Değerler**
+
+Değer tipindeki değişkenlerin varsayılan değerleri vardır. Özellikle derinlemesine iç içe geçmiş algoritmalar üzerinde çalışırken, tanımlanmamış değişkenleri kullanmak bile fark edilmeden mümkündür.
+
+## Nesne Yönelimli Tasarım
+(devam ediyor)
+
+## Eşzamanlılık
+
+Microsoft'un CLR ekibi içerisindeki paralel programlama tasarımcısının bakış açısından [eşzamanlı programlamanın (concurrency) tarihi](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/).
+
+### Essential Considerations for Thread Safety and Locking in Concurrent Programming
+- **Data Integrity:**
+  > Data integrity refers to the accuracy, consistency, and reliability of data stored in a system. In concurrent programming, ensuring data integrity involves preventing corruption or inconsistencies in shared data structures when accessed by multiple threads concurrently.
+
+- **Race Conditions:**
+  > Race conditions occur in concurrent programs when the outcome of operations depends on the non-deterministic interleaving or timing of threads. They typically occur when multiple threads access shared resources without proper synchronization, leading to unexpected behavior or incorrect results.
+
+- **Atomicity:**
+  > Atomicity refers to the property of an operation that ensures it is performed as a single, indivisible unit. In concurrent programming, atomicity prevents interleaving of operations from multiple threads, ensuring that operations are either fully completed or not executed at all.
+
+- **Memory Visibility:**
+  > Memory visibility refers to the guarantees provided by the programming language or runtime environment regarding when changes made by one thread to shared data become visible to other threads. Synchronization mechanisms like locks enforce memory visibility to ensure that changes are propagated to other threads in a timely manner.
+
+- **Deadlocks and Livelocks:**
+  > Deadlocks occur in concurrent programs when two or more threads are blocked indefinitely, waiting for resources held by each other. Livelocks occur when threads continuously change their states without making progress, often due to incorrect or ineffective locking strategies.
+
+- **Performance:**
+  > Performance in concurrent programming refers to the efficiency and scalability of multi-threaded applications. While locking mechanisms introduce overhead due to synchronization and context switching, they are necessary for ensuring correctness. Optimized locking strategies and thread-safe data structures help minimize contention and maximize performance in concurrent applications.
+
+- **Concurrency Control:**
+  > Concurrency control involves managing access to shared resources in multi-threaded applications to prevent race conditions, ensure data integrity, and maintain correctness. It includes designing effective locking strategies, using thread-safe data structures, and coordinating access to shared resources among multiple threads.
+
+### Principles
+
+- **Prefer not to use concurrency if not neccessary, it makes debugging harder.**
+  - Rather asynchronous programming than multithread programming.
+- **Use thread-safe collections if the collection is supposed to be modfied via "add" and "remove" methods.**
+  - Reading operations are thread-safe operations. 
+  - Keep in mind reference tpyes and value types. Eventhough thread-safe collections are used, objects may have mutable fields.
+
+- **Use functional programming paradigm for the methods consumed by asynchronous processes**
+  - Methods shall never call any external data besides the ones provided as arguments. This makes managing synchronization between async calls easier.
+  - Keep methods as simple as possible.
+  - Avoid side effects inside methods.
+ 
+- **Modification of objects requires `sync lock` where reading does not**
+  - orginize modification calls together and keep them smaller as much as possible
+  
+## Logging
+
+(in progress)
