@@ -7,7 +7,7 @@
 - [İstisna (Hata) Kaynakları](#i̇stisna-kaynakları)
 - [Sinsi Hatalar](#sinsi-hatalar)
 - [Nesne Yönelimli Tasarım](#nesne-yönelimli-tasarım)
-- [Eşzamanlılık](##eşzamanlılık)
+- [Eşzamanlılık](#eşzamanlılık)
   - [Eşzamanlı Programlamada Thread Güvenliği ve Kilitlemenin Temel Düşünceleri](#eşzamanlı-programlamada-thread-güvenliği-ve-kilitlemenin-temel-düşünceleri)
   - [İlkeler](#i̇lkeler)
 - [Loglama](#loglama)
