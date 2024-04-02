@@ -128,8 +128,8 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
 
   The value type variables have default values. It is possible to use unset variables without even recognizing it, especially when working on deeply nested algorithms.
 
-- **unlocked data structure during concurrency**
-  -  modifying a collection from multiple threads concurrently without proper synchronization mechanisms in place can result in exceptions or unexpected behavior due to race conditions.
+- **Race Condition**
+  -  Modifying a collection from multiple threads concurrently without proper synchronization mechanisms in place can result in exceptions or unexpected behavior due to race conditions.
     
 ## Object Oriented Design
 
@@ -143,7 +143,7 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
 - **Data Integrity:**
   > Data integrity refers to the accuracy, consistency, and reliability of data stored in a system. In concurrent programming, ensuring data integrity involves preventing corruption or inconsistencies in shared data structures when accessed by multiple threads concurrently.
 
-- **Race Conditions:**
+- **Race Condition:**
   > Race conditions occur in concurrent programs when the outcome of operations depends on the non-deterministic interleaving or timing of threads. They typically occur when multiple threads access shared resources without proper synchronization, leading to unexpected behavior or incorrect results.
 
 - **Atomicity:**
