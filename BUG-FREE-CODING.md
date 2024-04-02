@@ -128,7 +128,9 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
 
   The value type variables have default values. It is possible to use unset variables without even recognizing it, especially when working on deeply nested algorithms.
 
-
+- **unlocked data structure during concurrency**
+  -  modifying a collection from multiple threads concurrently without proper synchronization mechanisms in place can result in exceptions or unexpected behavior due to race conditions.
+    
 ## Object Oriented Design
 
 (in progress)
