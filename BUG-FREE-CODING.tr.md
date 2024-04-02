@@ -7,7 +7,7 @@
 - [İstisna (Hata) Kaynakları](#i̇stisna-kaynakları)
 - [Sinsi Hatalar](#sinsi-hatalar)
 - [Nesne Yönelimli Tasarım](#nesne-yönelimli-tasarım)
-- [Eşzamanlılık](#eszamanlilik)
+- [Eşzamanlılık](##eşzamanlılık)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
   - [Principles](#principles)
 - [Logging](#logging)
@@ -138,27 +138,27 @@ Değer tipindeki değişkenlerin varsayılan değerleri vardır. Özellikle deri
 
 Microsoft'un CLR ekibi içerisindeki paralel programlama tasarımcısının bakış açısından [eşzamanlı programlamanın (concurrency) tarihi](https://joeduffyblog.com/2016/11/30/15-years-of-concurrency/).
 
-### Essential Considerations for Thread Safety and Locking in Concurrent Programming
-- **Data Integrity:**
-  > Data integrity refers to the accuracy, consistency, and reliability of data stored in a system. In concurrent programming, ensuring data integrity involves preventing corruption or inconsistencies in shared data structures when accessed by multiple threads concurrently.
+### Eşzamanlı Programlamada Thread Güvenliği ve Kilitlemenin Temel Düşünceleri
+- **Veri Bütünlüğü:**
+  > Veri bütünlüğü, bir sistemde depolanan verilerin doğruluğu, tutarlılığı ve güvenilirliği ile ilgilidir. Eşzamanlı programlamada, veri bütünlüğünü sağlamak, birden çok iş parçacığı tarafından aynı anda erişilen paylaşılan veri yapılarında bozulmayı veya tutarsızlıkları önlemeyi içerir.
 
-- **Race Conditions:**
-  > Race conditions occur in concurrent programs when the outcome of operations depends on the non-deterministic interleaving or timing of threads. They typically occur when multiple threads access shared resources without proper synchronization, leading to unexpected behavior or incorrect results.
+- **Yarış Koşulları:**
+  > Yarış koşulları, işlemlerin sonucunun iş parçacıklarının belirlenmemiş sıralanması veya zamanlamasına bağlı olduğu zaman eşzamanlı programlarda meydana gelir. Genellikle birden çok iş parçacığı, uygun senkronizasyon olmaksızın paylaşılan kaynaklara erişir, bu da beklenmeyen davranışlara veya yanlış sonuçlara yol açar.
 
-- **Atomicity:**
-  > Atomicity refers to the property of an operation that ensures it is performed as a single, indivisible unit. In concurrent programming, atomicity prevents interleaving of operations from multiple threads, ensuring that operations are either fully completed or not executed at all.
+- **Atomluluk:**
+  > Atomluk, bir işlemin tek bir, bölünemez birim olarak gerçekleştirilmesini sağlayan özelliğe referans eder. Eşzamanlı programlamada, atomluk, iş parçacıklarının işlemlerinin karşılıklı olarak geçiştirilmesini önler, işlemlerin tamamen tamamlanıp tamamlanmadığını veya hiç yürütülmediğini garanti eder.
 
-- **Memory Visibility:**
-  > Memory visibility refers to the guarantees provided by the programming language or runtime environment regarding when changes made by one thread to shared data become visible to other threads. Synchronization mechanisms like locks enforce memory visibility to ensure that changes are propagated to other threads in a timely manner.
+- **Bellek Görünürlüğü:**
+  > Bellek görünürlüğü, bir iş parçacığının paylaşılan verilere yaptığı değişikliklerin diğer iş parçacıkları tarafından ne zaman görülebilir hale geldiğine dair programlama dilinin veya çalışma zamanı ortamının sağladığı güvencelere atıfta bulunur. Kilitler gibi senkronizasyon mekanizmaları, bellek görünürlüğünü zorunlu olarak sağlar ve değişikliklerin diğer iş parçacıklarına zamanında yayılmasını sağlar.
 
-- **Deadlocks and Livelocks:**
-  > Deadlocks occur in concurrent programs when two or more threads are blocked indefinitely, waiting for resources held by each other. Livelocks occur when threads continuously change their states without making progress, often due to incorrect or ineffective locking strategies.
+- **Kilitlenmeler ve Canlı Kilitler:**
+  > Kilitlenmeler, eşzamanlı programlarda iki veya daha fazla iş parçacığının, birbirlerinin elinde tuttuğu kaynakları sonsuz bir şekilde beklediği durumlarda ortaya çıkar. Canlı kilitler, iş parçacıklarının sürekli olarak durumlarını değiştirmelerine rağmen ilerleme kaydetmemeleri durumunda, genellikle yanlış veya etkisiz kilit stratejilerinden kaynaklanır.
 
-- **Performance:**
-  > Performance in concurrent programming refers to the efficiency and scalability of multi-threaded applications. While locking mechanisms introduce overhead due to synchronization and context switching, they are necessary for ensuring correctness. Optimized locking strategies and thread-safe data structures help minimize contention and maximize performance in concurrent applications.
+- **Performans:**
+  > Eşzamanlı programlamadaki performans, çoklu iş parçacıklı uygulamaların verimliliği ve ölçeklenebilirliği ile ilgilidir. Kilit mekanizmaları senkronizasyon ve bağlam değiştirme nedeniyle bir miktar iş yükü getirse de, doğruluğu sağlamak için gereklidirler. Optimizasyon yapılmış kilit stratejileri ve iş parçacığı güvenli veri yapıları, çekişmeyi en aza indirir ve eşzamanlı uygulamalardaki performansı maksimize eder.
 
-- **Concurrency Control:**
-  > Concurrency control involves managing access to shared resources in multi-threaded applications to prevent race conditions, ensure data integrity, and maintain correctness. It includes designing effective locking strategies, using thread-safe data structures, and coordinating access to shared resources among multiple threads.
+- **Eşzamanlılık Kontrolü:**
+  > Eşzamanlılık kontrolü, çoklu iş parçacıklı uygulamalarda paylaşılan kaynaklara erişimi yöneterek yarış koşullarını önlemek, veri bütünlüğünü sağlamak ve doğruluğu korumakla ilgilidir. Bu, etkili kilit stratejileri tasarlamayı, iş parçacığı güvenli veri yapıları kullanmayı ve birden çok iş parçacığının paylaşılan kaynaklara erişimini koordine etmeyi içerir.
 
 ### Principles
 
