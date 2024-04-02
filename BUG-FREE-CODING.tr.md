@@ -10,7 +10,7 @@
 - [Eşzamanlılık](##eşzamanlılık)
   - [Eşzamanlı Programlamada Thread Güvenliği ve Kilitlemenin Temel Düşünceleri](#eşzamanlı-programlamada-thread-güvenliği-ve-kilitlemenin-temel-düşünceleri)
   - [İlkeler](#ilkeler)
-- [Logging](#logging)
+- [Loglama](#loglama)
 
 ## Genel İlkeler
 
