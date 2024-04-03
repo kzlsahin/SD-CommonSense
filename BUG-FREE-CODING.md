@@ -7,11 +7,11 @@
 - [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
 - [Exception Sources](#exception-sources)
 - [Sneaky bugs](#sneaky-bugs)
-- [Object Oriented Design(coming soon)](#object-oriented-design)
+- [Object Oriented Design (coming soon)](#object-oriented-design)
 - [Concurrency](#concurrency)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
   - [Principles](#principles)
-- [Logging(coming soon)](#logging)
+- [Logging (coming soon)](#logging)
 - [Examples](#examples)
 
 ## General principles
