@@ -10,7 +10,7 @@
 - [Object Oriented Design (coming soon)](#object-oriented-design)
 - [Concurrency](#concurrency)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
-  - [Principles in Async Programming](#principles-in-asyncprogramming)
+  - [Principles in Async Programming](#principles-in-async-programming)
 - [Logging (coming soon)](#logging)
 - [Examples](#examples)
 
