@@ -10,7 +10,7 @@
 - [Object Oriented Design (coming soon)](#object-oriented-design)
 - [Concurrency](#concurrency)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
-  - [Principles](#principles)
+  - [Principles in Async Programming](#principles-in-asyncprogramming)
 - [Logging (coming soon)](#logging)
 - [Examples](#examples)
 
@@ -161,7 +161,7 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
 - **Concurrency Control:**
   > Concurrency control involves managing access to shared resources in multi-threaded applications to prevent race conditions, ensure data integrity, and maintain correctness. It includes designing effective locking strategies, using thread-safe data structures, and coordinating access to shared resources among multiple threads.
 
-### Principles
+### Principles in Async Programming
 
 - **Prefer not to use concurrency if not neccessary, it makes debugging harder.**
   - Rather asynchronous programming than multithread programming.
