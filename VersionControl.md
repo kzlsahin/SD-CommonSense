@@ -3,9 +3,9 @@
 - Always use a version control system.
 
 
-## Using GitHub
+## 1. Using GitHub
 
-### Issues to Care
+### 1.1. Issues to Care
 
 - **Inserting a new code block**
   
