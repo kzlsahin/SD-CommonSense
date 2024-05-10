@@ -5,7 +5,8 @@
 ## Contents
 - [General Principles](#general-principles)
 - [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
-- [Exception Sources](#exception-sources)
+- [Exception Handling](#exception-handling)
+    - [Exception Sources](#exception-sources)
 - [Sneaky bugs](#sneaky-bugs)
 - [Object Oriented Design (coming soon)](#object-oriented-design)
 - [Concurrency](#concurrency)
@@ -103,7 +104,12 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - take a look for any possible null values.
   - Take a look for any possible empty collection.
 
-## Exception Sources
+## Exception Handling
+
+- **Only catch exceptions that can be properly handled; avoid catching generic exceptions.**
+- **Use specific exception types to provide meaningful error messages**
+  
+### Exception Sources
 
 - **Division by zero**
 
