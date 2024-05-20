@@ -139,6 +139,11 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
     
 ## Object Oriented Design
 
+- **Use a singleton class instead of a static class:**
+  - If the class uses some properties as a state, initialisation may be required by the class in the feature, even if not at that point.
+  - Singleton provides you more flexible interface to adopt and allows refactoring the code base more easily.
+ 
+  - 
 (in progress)
 
 ## Concurrency
