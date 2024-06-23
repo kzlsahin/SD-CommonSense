@@ -139,6 +139,15 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
     
 ## Object Oriented Design
 
+- **İnheritance is an indicator of Is-A relationship, use it wisely**
+  - Use inheritance only for objects preserving Is-A relationship.
+  - never think of the inheritance as a way of code reusing, there are more suitable ways to provide re-usability.
+
+- **prefer composition over inheritance**
+  - when there is Has-A relationship between objects, use composition instead of inheritance.
+  - composition gives more control and provides de-coupling.
+  - Use interfaces for polymorphism in such cases.
+
 - **Use a singleton class instead of a static class:**
   - If the class uses some properties as a state, initialisation may be required by the class in the feature, even if not at that point.
   - Singleton provides you more flexible interface to adopt and allows refactoring the code base more easily.
