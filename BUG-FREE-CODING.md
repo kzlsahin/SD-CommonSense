@@ -141,7 +141,7 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
 
 - **İnheritance is an indicator of Is-A relationship, use it wisely**
   - Use inheritance only for objects preserving Is-A relationship.
-  - never think of the inheritance as a way of code reusing, there are more suitable ways to provide re-usability.
+  - never think of the inheritance as a OOP way of code reusing, there are more suitable ways to provide re-usability.
 
 - **prefer composition over inheritance**
   - when there is Has-A relationship between objects, use composition instead of inheritance.
