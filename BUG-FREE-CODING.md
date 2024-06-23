@@ -1,4 +1,4 @@
-# Bug Free Coding
+pp# Bug Free Coding
 
 [![en](https://img.shields.io/badge/lang-tr-red.svg)](BUG-FREE-CODING.tr.md)
 
@@ -139,6 +139,12 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
     
 ## Object Oriented Design
 
+- **Understand Interface Segregation**
+  - "objects should not be forced to depend on methods it does not use"
+  - do not hesitate to crate atomic interfaces.
+  - interfaces provide polymorphism while preventing coupling between classes.
+  - interfaces provides Is-A relationship while it is Has-A relationship based on behaviours.
+  
 - **İnheritance is an indicator of Is-A relationship, use it wisely**
   - Use inheritance only for objects preserving Is-A relationship.
   - never think of the inheritance as a OOP way of code reusing, there are more suitable ways to provide re-usability.
