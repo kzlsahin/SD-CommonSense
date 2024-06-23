@@ -8,7 +8,7 @@ pp# Bug Free Coding
 - [Exception Handling](#exception-handling)
     - [Exception Sources](#exception-sources)
 - [Sneaky bugs](#sneaky-bugs)
-- [Object Oriented Design (coming soon)](#object-oriented-design)
+- [Object Oriented Design](#object-oriented-design)
 - [Concurrency](#concurrency)
   - [Essential Considerations for Thread Safety and Locking in Concurrent Programming](#essential-considerations-for-thread-safety-and-locking-in-concurrent-programming)
   - [Principles in Async Programming](#principles-in-async-programming)
