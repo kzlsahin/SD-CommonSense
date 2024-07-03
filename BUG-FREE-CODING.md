@@ -130,6 +130,9 @@ Here are the principles I witnessed as quite important for writing bug free meth
 
 Bugs that don't throws an exception but causes undesired behavior. These bugs are hard to identify.
 
+- **Memory Leakage due to events**
+    - When a calss registers itself to a publisher class, the publisher class holds its reference as long as the class is not unregistered from the publisher's event.
+
 - **Default Values**
 
   The value type variables have default values. It is possible to use unset variables without even recognizing it, especially when working on deeply nested algorithms.
