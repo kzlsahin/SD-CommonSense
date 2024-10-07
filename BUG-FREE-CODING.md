@@ -205,7 +205,12 @@ Bugs that don't throws an exception but causes undesired behavior. These bugs ar
  
 - **Modification of objects requires `sync lock` where reading does not**
   - orginize modification calls together and keep them smaller as much as possible
-  
+
+- public methods exposed from a library should be async only for workloads that involve I/O-bound operations (they may also involve computation, but should not be purely computational).
+  - If a method is purely compute-bound, it should be exposed only as a synchronous implementation. The code that consumes it may choose whether to wrap an invocation of that method into a task.
+  - if a method is I/O-bound, it should be exposed only as an asynchronous implementation.
+
+
 ## Logging
 
 (in progress)
