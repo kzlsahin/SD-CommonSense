@@ -23,7 +23,7 @@ pp# Bug Free Coding
 - Be patiant and write with ease
   - write the code consciously, do not rush
   - consider procedure results
-  - use an effective strategy for exception management. For example, Use result objects and get logs
+  - use an effective strategy for exception management. For example, Use Result Objects (e.g., Result<TSuccess, TError>) to explicitly represent success or various failure outcomes, forcing callers to handle both paths. This often leads to clearer error handling logic compared to exceptions for routine validation issues, and enables better logging.
     
 - Learn refactoring techniques and Design Patterns ([Refactoring Guru](https://refactoring.guru/refactoring)).
   
@@ -77,6 +77,7 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - Use early returns to validate the initial state
   - Check function arguments for null values
   - check for empty collections If there is any collection type argument
+  - Sanitize Inputs: Beyond validation, ensure inputs are cleaned or escaped to remove potentially harmful characters or sequences (e.g., preventing SQL injection, Cross-Site Scripting (XSS)). This prevents security vulnerabilities that can also be considered critical bugs.
     
 - **Use type allias for complicated nested types, such as `Action<Action<UseState>, Object[]>`:**
   
@@ -135,7 +136,15 @@ Here are the principles I witnessed as quite important for writing bug free meth
     - indices starts from correct value
     - indices are incremented properly
     - complex logic around index increment is avoided.
- 
+
+- **External system failures**
+
+  Account for errors from external dependencies (databases, APIs, third-party services) including network issues, timeouts, and malformed responses.
+
+- **Resource Exhaustion**
+
+  Consider errors related to running out of memory, disk space, or open file handles.
+
 ## Sneaky bugs
 
 Bugs that don't throws an exception but causes undesired behavior. These bugs are hard to identify.
