@@ -110,6 +110,9 @@ Here are the principles I witnessed as quite important for writing bug free meth
 - Always consider errors whenever an input and outsource is in action.
 - Be cautios when managing errors in loops. Be sure to `break` or `continue` properly.
 - Using early `return` in a loop is a dangerous operation. Even it works, a new bug may be introduced in future refactorings due to early return in a loop.
+  - If any `return` seems to be required in a loop, consider it may be required before the loop begins.
+  - If you need to terminate the whole method due to an error in a loop, it most probably indicates a serious design problem.
+  - Afterall, an exceptional error may lead to terminate the whole process. Then, consider rolling back any changes the method made.
 
 ### Exception Handling
 
