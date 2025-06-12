@@ -104,6 +104,12 @@ Here are the principles I witnessed as quite important for writing bug free meth
   - take a look for any possible null values.
   - Take a look for any possible empty collection.
 
+## Error Management
+
+- Always consider errors whenever an input and outsource is in action.
+- Be cautios when managing errors in loops. Be sure to `break` or `continue` properly.
+- Using early `return` in a loop is a dangerous operation. Even it works, a new bug may be introduced in future refactorings due to early return in a loop.
+
 ## Exception Handling
 
 - **Only catch exceptions that can be properly handled; avoid catching generic exceptions.**
