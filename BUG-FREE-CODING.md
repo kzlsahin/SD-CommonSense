@@ -5,7 +5,8 @@ pp# Bug Free Coding
 ## Contents
 - [General Principles](#general-principles)
 - [Writing bug-free Functions/Methods](#writing-bug-free-functionsmethods)
-- [Exception Handling](#exception-handling)
+- [Error Management](#error-management)
+  - [Exception Handling](#exception-handling)
     - [Exception Sources](#exception-sources)
 - [Sneaky bugs](#sneaky-bugs)
 - [Object Oriented Design](#object-oriented-design)
@@ -110,12 +111,12 @@ Here are the principles I witnessed as quite important for writing bug free meth
 - Be cautios when managing errors in loops. Be sure to `break` or `continue` properly.
 - Using early `return` in a loop is a dangerous operation. Even it works, a new bug may be introduced in future refactorings due to early return in a loop.
 
-## Exception Handling
+### Exception Handling
 
 - **Only catch exceptions that can be properly handled; avoid catching generic exceptions.**
 - **Use specific exception types to provide meaningful error messages**
   
-### Exception Sources
+#### Exception Sources
 
 - **Division by zero**
 
