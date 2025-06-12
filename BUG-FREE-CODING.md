@@ -23,7 +23,7 @@ pp# Bug Free Coding
 - Be patiant and write with ease
   - write the code consciously, do not rush
   - consider procedure results
-  - use an effective strategy for exception management. For example, Use Result Objects (e.g., Result<TSuccess, TError>) to explicitly represent success or various failure outcomes, forcing callers to handle both paths. This often leads to clearer error handling logic compared to exceptions for routine validation issues, and enables better logging.
+  - use an effective strategy for exception management. For example, Use Result Objects (e.g., Result<TSuccess, TError>) to explicitly represent success or various failure outcomes, forcing callers to handle both paths.
     
 - Learn refactoring techniques and Design Patterns ([Refactoring Guru](https://refactoring.guru/refactoring)).
   
